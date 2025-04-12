@@ -8,6 +8,9 @@
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f0f2f5;
+      min-height: 100vh; /* পুরো ভিউপোর্ট উচ্চতা নেবে */
+      display: flex;
+      flex-direction: column; /* এলিমেন্টগুলো কলামে সাজবে */
     }
     header {
       background-color: #4A90E2;
@@ -21,6 +24,8 @@
       padding: 20px;
       max-width: 800px;
       margin: auto;
+      flex: 1; /* অবশিষ্ট স্থান দখল করবে */
+      width: 100%; /* প্রয়োজন হলে */
     }
     .input-box {
       background-color: #fff3cd;
@@ -55,6 +60,7 @@
       border-radius: 8px;
       text-align: center;
       min-height: 150px;
+      margin-bottom: 40px; /* ফুটারের জন্য জায়গা রাখে */
     }
     iframe {
       width: 100%;
