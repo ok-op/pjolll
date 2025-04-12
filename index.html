@@ -102,7 +102,7 @@
   </div>
 
   <div class="video-box" id="videoContainer">
-    <p>No video loaded</p>
+    <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> No video loaded</p>
   </div>
 </div>
 
@@ -114,7 +114,7 @@
     const container = document.getElementById('videoContainer');
 
     if (!url || !url.endsWith('.mp4')) {
-      container.innerHTML = "<p style='color: red;'>Please enter a valid .mp4 URL</p>";
+      container.innerHTML = "<p style='color: red;'><i class="fa fa-link" aria-hidden="true"></i> Please enter a valid .mp4 URL</p>";
       return;
     }
 
