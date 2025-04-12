@@ -2,26 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="author" content="WOODcraft SudoR2spr" />
-  <meta name="keywords" content="wdzone, mp4video, mp4links, player, Free" />
-  <meta name="description" content="Website Service mp4 link video player." />
-  <meta property="og:description" content="WDZONE Website Service mp4 video player.">
-  <meta charset='utf-8' content='text/html' http-equiv='content-type' />
-  <meta content='https://i.ibb.co/RpQrMNVg/terabox-dl.png' property='og:image' />
-  <link href='https://i.ibb.co/RpQrMNVg/terabox-dl.png' rel='shortcut icon' type='image/vnd.microsoft.icon' />
-  <link href='https://i.ibb.co/RpQrMNVg/terabox-dl.png' rel='apple-touch-icon' />
-  <link rel="icon" type="image/x-icon" href="https://i.ibb.co/RpQrMNVg/terabox-dl.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>MP4 Player</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f0f2f5;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
     }
     header {
       background-color: #4A90E2;
@@ -35,8 +21,6 @@
       padding: 20px;
       max-width: 800px;
       margin: auto;
-      flex: 1; 
-      width: 100%;
     }
     .input-box {
       background-color: #fff3cd;
@@ -71,7 +55,6 @@
       border-radius: 8px;
       text-align: center;
       min-height: 150px;
-      margin-bottom: 40px; 
     }
     iframe {
       width: 100%;
@@ -93,20 +76,20 @@
 </head>
 <body>
 
-<header><i class="fa fa-play" aria-hidden="true"></i> MP4 Player</header>
+<header>MP4 Player</header>
 
 <div class="container">
   <div class="input-box">
     <input type="text" id="mp4Url" placeholder="Enter your MP4 video URL here" />
-    <button onclick="loadVideo()"><i class="fa fa-play-circle-o" aria-hidden="true"></i> Play</button>
+    <button onclick="loadVideo()">Play</button>
   </div>
 
   <div class="video-box" id="videoContainer">
-    <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> No video loaded</p>
+    <p>No video loaded</p>
   </div>
 </div>
 
-<footer>© 2025 MP4 Player by <i class="fa fa-telegram" aria-hidden="true"></i> 𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭</footer>
+<footer>© 2025 MP4 Player by 𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭</footer>
 
 <script>
   function loadVideo() {
@@ -114,7 +97,7 @@
     const container = document.getElementById('videoContainer');
 
     if (!url || !url.endsWith('.mp4')) {
-      container.innerHTML = "<p Please enter a valid .mp4 URL</p>";
+      container.innerHTML = "<p style='color: red;'>Please enter a valid .mp4 URL</p>";
       return;
     }
 
