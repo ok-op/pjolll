@@ -76,20 +76,20 @@
 </head>
 <body>
 
-<header>MP4 Player</header>
+<header><i class="fa fa-play" aria-hidden="true"></i> MP4 Player</header>
 
 <div class="container">
   <div class="input-box">
     <input type="text" id="mp4Url" placeholder="Enter your MP4 video URL here" />
-    <button onclick="loadVideo()">Play</button>
+    <button onclick="loadVideo()"><i class="fa fa-play" aria-hidden="true"></i> Play</button>
   </div>
 
   <div class="video-box" id="videoContainer">
-    <p>No video loaded</p>
+    <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> No video loaded</p>
   </div>
 </div>
 
-<footer>© 2025 MP4 Player by 𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭</footer>
+<footer>© 2025 MP4 Player By <i class="fa fa-user-o" aria-hidden="true"></i> 𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭</footer>
 
 <script>
   function loadVideo() {
@@ -97,7 +97,7 @@
     const container = document.getElementById('videoContainer');
 
     if (!url || !url.endsWith('.mp4')) {
-      container.innerHTML = "<p style='color: red;'>Please enter a valid .mp4 URL</p>";
+      container.innerHTML = "<p style='color: red;'><i class="fa fa-link" aria-hidden="true"></i> Please enter a valid .mp4 URL</p>";
       return;
     }
 
